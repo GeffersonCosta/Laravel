@@ -1,27 +1,31 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\events;
 //para cada view é preciso passar os dados que queira receber
-Route::get('/', function () {
-    $nome = "Gefferson";
-    $arr = [1,2,3,4,7,8,9];
-    return view('welcome', compact('nome', 'arr'));
-    //return view('welcome', ['nome' => $nome]);
-});
 
-Route::get('/contato', function(){
-    return view('contato');
-});
+Route::get('/', [EventController::class, 'index']);
 
-Route::get('/produtos', function(){
+Route::get('/events/create', [EventController::class, 'create']);
 
-    $busca = request('search');
+Route::get('/contato', [EventController::class,  'contato']);
+
+Route::get('/produtos',[EventController::class, 'produtos']);
+
+Route::get('produto/{id?}', [EventController::class, 'produto']);
+
+
+
+/*Route::get('/produtos', function(){
+ $busca = request('search');
     return view('produtos', compact('busca'));
-});
+});*/
 
 
-Route::get('/produto/{id?}', function($id = null){
+/*Route::get('/produto/{id?}', function($id = null){
     return view('produto', compact('id'));
-});
+});*/
 
-//Route::fallback('')
+
+
