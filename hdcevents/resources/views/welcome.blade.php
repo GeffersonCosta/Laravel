@@ -8,7 +8,7 @@
        @if($nome == 'Henrique')
         <p>O nome é igual</p>
        @else
-        <p>O nome não é igual</p>
+        <p>O nome não é igual </p>
        @endif
 
        @foreach ($arr as $elemento)
