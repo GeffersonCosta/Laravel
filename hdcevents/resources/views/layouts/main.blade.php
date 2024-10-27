@@ -16,7 +16,7 @@
         <header>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="/">HojeEventos</a>
+                  <a id="logo" class="navbar-brand" href="/">HojeEventos</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -41,25 +41,13 @@
         </header>
         @yield('content')
         <footer>
-            <p>HDC Events &copy; 2024</p>
+
             <div class="card text-center">
                 <div class="card-header">
-                  <ul class="nav nav-pills card-header-pills">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                  </ul>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p>HojeEventos
+                    &copy; 2024</p>
                 </div>
               </div>
 
